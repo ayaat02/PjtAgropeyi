@@ -1,0 +1,17 @@
+--suite Inscription
+--variable CALLER_ID:e0cadb1652a14eab892d7c229db5e2c9
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:1
+--variable PABOTNUMBEROFPROCESSES:3
+--variable PABOTQUEUEINDEX:2
+--variable PABOTLASTLEVEL:
+--argumentfile ./edge.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\3\2
+--consolecolors off
+--consolemarkers off
+tests/inscription.robot

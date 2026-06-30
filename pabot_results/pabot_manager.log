@@ -1,0 +1,45 @@
+[INFO]    Initialized logging in .\pabot_results
+[INFO]    Robot Framework remote server at 127.0.0.1:8270 started.
+[DEBUG]   Storing .pabotsuitenames file
+[DEBUG]   2026-06-30 16:56:39.387154 [PID:34040] [0] [ID:0] EXECUTING Inscription {./chrome.txt}
+[DEBUG]   2026-06-30 16:56:39.394332 [PID:10348] [1] [ID:1] EXECUTING Inscription {./firefox.txt}
+[DEBUG]   2026-06-30 16:56:39.395734 [PID:25596] [2] [ID:2] EXECUTING Inscription {./edge.txt}
+[DEBUG]   2026-06-30 16:56:44.605133 [PID:34040] [0] [ID:0] still running Inscription {./chrome.txt} after 5.0s
+[DEBUG]   2026-06-30 16:56:45.693901 [PID:10348] [1] [ID:1] still running Inscription {./firefox.txt} after 5.0s
+[DEBUG]   2026-06-30 16:56:45.694449 [PID:25596] [2] [ID:2] still running Inscription {./edge.txt} after 5.0s
+[DEBUG]   2026-06-30 16:56:54.959383 [PID:34040] [0] [ID:0] still running Inscription {./chrome.txt} after 15.0s
+[DEBUG]   2026-06-30 16:56:55.756004 [PID:25596] [2] [ID:2] still running Inscription {./edge.txt} after 15.0s
+[DEBUG]   2026-06-30 16:56:55.758536 [PID:10348] [1] [ID:1] still running Inscription {./firefox.txt} after 15.0s
+[INFO]    2026-06-30 16:57:09.951581 [PID:10348] [1] [ID:1] Execution failed in Inscription {./firefox.txt} with 1 failing test(s)
+==============================================================================
+Inscription :: parcour inscription
+==============================================================================
+Parcour inscription                                                   | FAIL |
+MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+------------------------------------------------------------------------------
+Inscription :: parcour inscription                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\lenovo\Desktop\PjtAgropeyi\pabot_results\2\1\output.xml
+[INFO]    2026-06-30 16:57:10.441832 [PID:34040] [0] [ID:0] PASSED Inscription {./chrome.txt} in 31.1 seconds
+[DEBUG]   2026-06-30 16:57:10.855224 [PID:25596] [2] [ID:2] still running Inscription {./edge.txt} after 30.0s
+[INFO]    2026-06-30 16:57:11.070940 [PID:25596] [2] [ID:2] PASSED Inscription {./edge.txt} in 31.7 seconds
+[INFO]    3 tests, 2 passed, 1 failed, 0 skipped.
+[INFO]    ===================================================
+[INFO]    Output:  C:\Users\lenovo\Desktop\PjtAgropeyi\output.xml
+[INFO]    Log:     C:\Users\lenovo\Desktop\PjtAgropeyi\log.html
+[INFO]    Report:  C:\Users\lenovo\Desktop\PjtAgropeyi\report.html
+[DEBUG]   Finalizing Pabot execution...
+[DEBUG]   Stopping PabotLib process
+[INFO]    Robot Framework remote server at 127.0.0.1:8270 stopped.
+[DEBUG]   PabotLib process stopped
+[INFO]    Total testing: 1 minute 33.30 seconds
+[INFO]    Elapsed time:  32.85 seconds
+[DEBUG]   Logs flushed successfully.

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.4.2 (Python 3.12.4 on win32)" generated="2026-06-30T16:57:11.177197" rpa="false" schemaversion="5">
+<suite id="s1" name="Inscription" source="C:\Users\lenovo\Desktop\PjtAgropeyi\tests\inscription.robot">
+<test id="s1-t1" name="Parcour inscription" line="23">
+<kw name="init browser" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:56:41.166806" level="INFO">Opening browser 'firefox' to base url 'https://agropeyi.fr/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-30T16:56:41.166806" elapsed="22.281228"/>
+</kw>
+<status status="PASS" start="2026-06-30T16:56:41.164273" elapsed="22.285278"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-06-30T16:57:03.451648" level="INFO">${rand_str} = 1e7l3kd0</msg>
+<var>${rand_str}</var>
+<arg>8</arg>
+<arg>[LOWER][NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.449551" elapsed="0.002097"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-06-30T16:57:03.455948" level="INFO">${email} = SEPARATOR 1e7l3kd0 @gmail.com</msg>
+<var>${email}</var>
+<arg>SEPARATOR</arg>
+<arg>${rand_str}</arg>
+<arg>@gmail.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.451648" elapsed="0.004300"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-06-30T16:57:03.456945" level="INFO">${password} = 6zWVaoi4</msg>
+<var>${password}</var>
+<arg>8</arg>
+<arg>[LETTERS][NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.455948" elapsed="0.000997"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2026-06-30T16:57:03.459505" level="INFO">${name} = Barbara</msg>
+<var>${name}</var>
+<status status="PASS" start="2026-06-30T16:57:03.457994" elapsed="0.001511"/>
+</kw>
+<kw name="Last Name" owner="FakerLibrary">
+<msg time="2026-06-30T16:57:03.460632" level="INFO">${prenom} = Anthony</msg>
+<var>${prenom}</var>
+<status status="PASS" start="2026-06-30T16:57:03.459505" elapsed="0.001127"/>
+</kw>
+<kw name="Click Inscription" owner="main_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:03.463122" level="INFO">Clicking element 'css=.top-bar-btn'.</msg>
+<arg>${inscription}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.461901" elapsed="0.205611"/>
+</kw>
+<status status="PASS" start="2026-06-30T16:57:03.460632" elapsed="0.206880"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:03.688179" level="INFO">Current page contains text 'Créer un compte'.</msg>
+<arg>Créer un compte</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.667512" elapsed="0.020667"/>
+</kw>
+<kw name="remplire_formulaire" owner="inscription_page">
+<kw name="Saisir name" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:03.693253" level="INFO">Typing text 'Barbara' into text field 'id:nom'.</msg>
+<arg>${name}</arg>
+<arg>${n}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.691740" elapsed="0.140189"/>
+</kw>
+<arg>${n}</arg>
+<status status="PASS" start="2026-06-30T16:57:03.691740" elapsed="0.140189"/>
+</kw>
+<kw name="Saisir prenom" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:03.834686" level="INFO">Typing text 'Anthony' into text field 'id:prenom'.</msg>
+<arg>${prenom}</arg>
+<arg>${p}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.834143" elapsed="0.128751"/>
+</kw>
+<arg>${p}</arg>
+<status status="PASS" start="2026-06-30T16:57:03.831929" elapsed="0.131476"/>
+</kw>
+<kw name="Saisir email" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:03.965965" level="INFO">Typing text 'SEPARATOR 1e7l3kd0 @gmail.com' into text field 'id:email'.</msg>
+<arg>${email}</arg>
+<arg>${e}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:03.964415" elapsed="0.098284"/>
+</kw>
+<arg>${e}</arg>
+<status status="PASS" start="2026-06-30T16:57:03.963405" elapsed="0.099294"/>
+</kw>
+<kw name="Saisir telephone" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.066249" level="INFO">Typing text '0785859674' into text field 'id=telephone'.</msg>
+<arg>${tel}</arg>
+<arg>${t}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.065246" elapsed="0.047830"/>
+</kw>
+<arg>${t}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.064226" elapsed="0.048850"/>
+</kw>
+<kw name="Saisir adresse" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.115609" level="INFO">Typing text 'tiziouzou' into text field 'id=adresse'.</msg>
+<arg>${adresse}</arg>
+<arg>${a}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.114598" elapsed="0.051542"/>
+</kw>
+<arg>${a}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.113076" elapsed="0.053064"/>
+</kw>
+<kw name="Saisir ville" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.168150" level="INFO">Typing text 'paris' into text field 'id=ville'.</msg>
+<arg>${ville}</arg>
+<arg>${v}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.167143" elapsed="0.177016"/>
+</kw>
+<arg>${v}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.166140" elapsed="0.178019"/>
+</kw>
+<kw name="Saisir code_postale" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.346498" level="INFO">Typing text '94200' into text field 'id=code_postal'.</msg>
+<arg>${c_postal}</arg>
+<arg>${cp}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.345967" elapsed="0.035895"/>
+</kw>
+<arg>${cp}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.345201" elapsed="0.036661"/>
+</kw>
+<kw name="Saisir pays" owner="inscription_page">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.387807" level="INFO">Selecting options from selection list 'id=pays' by value France.</msg>
+<arg>${pays}</arg>
+<arg>${py}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.382863" elapsed="0.141943"/>
+</kw>
+<arg>${py}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.382863" elapsed="0.141943"/>
+</kw>
+<kw name="Saisir password" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.527899" level="INFO">Typing text '6zWVaoi4' into text field 'id=mot_de_passe'.</msg>
+<arg>${mdp}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.527899" elapsed="0.063148"/>
+</kw>
+<arg>${pwd}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.524806" elapsed="0.067275"/>
+</kw>
+<kw name="Saisir Confirmed_password" owner="inscription_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.595186" level="INFO">Typing text '6zWVaoi4' into text field 'id=confirmer_mot_de_passe'.</msg>
+<arg>${c_mdp}</arg>
+<arg>${cpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.594134" elapsed="0.061473"/>
+</kw>
+<arg>${cpwd}</arg>
+<status status="PASS" start="2026-06-30T16:57:04.592081" elapsed="0.064648"/>
+</kw>
+<kw name="Click inscription" owner="inscription_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${btn_inscrire}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.657337" elapsed="0.032645"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2026-06-30T16:57:04.856405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20260630_165638-2-1-selenium-screenshot-1.png"&gt;&lt;img src="20260630_165638-2-1-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-30T16:57:04.857922" level="FAIL">MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+</msg>
+<arg>${btn_inscrire}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2026-06-30T16:57:04.691174" elapsed="0.178228">MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${btn_inscrire}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-30T16:57:04.869402" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-06-30T16:57:04.656729" elapsed="0.212673">MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+</status>
+</kw>
+<arg>${name}</arg>
+<arg>${prenom}</arg>
+<arg>${email}</arg>
+<arg>0785859674</arg>
+<arg>tiziouzou</arg>
+<arg>paris</arg>
+<arg>94200</arg>
+<arg>France</arg>
+<arg>${password}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2026-06-30T16:57:03.689696" elapsed="1.180734">MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-30T16:57:04.871968" elapsed="4.814435"/>
+</kw>
+<status status="FAIL" start="2026-06-30T16:56:41.163271" elapsed="28.523132">MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+</status>
+</test>
+<doc>parcour inscription</doc>
+<status status="FAIL" start="2026-06-30T16:56:39.908000" elapsed="28.523000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Inscription" id="s1" pass="0" fail="1" skip="0">Inscription</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

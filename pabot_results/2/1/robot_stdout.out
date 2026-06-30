@@ -1,0 +1,17 @@
+==============================================================================
+Inscription :: parcour inscription
+==============================================================================
+Parcour inscription                                                   | FAIL |
+MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+------------------------------------------------------------------------------
+Inscription :: parcour inscription                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\lenovo\Desktop\PjtAgropeyi\pabot_results\2\1\output.xml

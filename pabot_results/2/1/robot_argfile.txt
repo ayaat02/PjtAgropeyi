@@ -1,0 +1,17 @@
+--suite Inscription
+--variable CALLER_ID:5a8b84b790664150adabf39705155d05
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:3
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Inscription.PABOT_noend
+--argumentfile ./firefox.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\2\1
+--consolecolors off
+--consolemarkers off
+tests/inscription.robot

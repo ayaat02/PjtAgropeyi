@@ -1,0 +1,17 @@
+2026-06-30 16:56:41.109955 ==============================================================================
+2026-06-30 16:56:41.163271 Inscription :: parcour inscription
+2026-06-30 16:56:41.163271 ==============================================================================
+2026-06-30 16:57:09.645517 Parcour inscription                                                   | FAIL |
+2026-06-30 16:57:09.687398 MoveTargetOutOfBoundsException: Message: Move target (640, 660) is out of bounds of viewport dimensions (1280, 649)
+2026-06-30 16:57:09.687398 Stacktrace:
+2026-06-30 16:57:09.687398 RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+2026-06-30 16:57:09.687398 WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+2026-06-30 16:57:09.687398 MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+2026-06-30 16:57:09.687398 assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3170:11
+2026-06-30 16:57:09.687398 #assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+2026-06-30 16:57:09.687398 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:182:42
+2026-06-30 16:57:09.687398 ------------------------------------------------------------------------------
+2026-06-30 16:57:09.687398 Inscription :: parcour inscription                                    | FAIL |
+2026-06-30 16:57:09.688400 1 test, 0 passed, 1 failed
+2026-06-30 16:57:09.688400 ==============================================================================
+2026-06-30 16:57:09.689401 Output:  C:\Users\lenovo\Desktop\PjtAgropeyi\pabot_results\2\1\output.xml
