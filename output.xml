@@ -1,198 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.4 on win32)" generated="2026-06-30T16:59:47.057292" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="C:\Users\lenovo\Desktop\PjtAgropeyi\tests">
-<suite id="s1-s1" name="Inscription" source="C:\Users\lenovo\Desktop\PjtAgropeyi\tests\inscription.robot">
-<test id="s1-s1-t1" name="Parcour inscription" line="23">
+<robot generator="Robot 7.4.2 (Python 3.12.4 on win32)" generated="2026-07-01T11:18:11.349379" rpa="false" schemaversion="5">
+<suite id="s1" name="Inscription" source="C:\Users\lenovo\Desktop\PjtAgropeyi\tests\inscription.robot">
+<test id="s1-t1" name="Parcour inscription" line="23">
 <kw name="init browser" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:47.912205" level="INFO">Opening browser 'chrome' to base url 'https://agropeyi.fr/index.php'.</msg>
+<msg time="2026-07-01T11:18:12.202346" level="INFO">Opening browser 'chrome' to base url 'https://agropeyi.fr/index.php'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-30T16:59:47.912205" elapsed="0.891393"/>
+<status status="PASS" start="2026-07-01T11:18:12.201353" elapsed="19.828650"/>
 </kw>
-<status status="PASS" start="2026-06-30T16:59:47.911206" elapsed="0.892392"/>
+<status status="PASS" start="2026-07-01T11:18:12.200362" elapsed="19.829641"/>
 </kw>
 <kw name="Generate Random String" owner="String">
-<msg time="2026-06-30T16:59:48.808241" level="INFO">${rand_str} = r4q0wiye</msg>
+<msg time="2026-07-01T11:18:32.030998" level="INFO">${rand_str} = wwvucer3</msg>
 <var>${rand_str}</var>
 <arg>8</arg>
 <arg>[LOWER][NUMBERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2026-06-30T16:59:48.808241" elapsed="0.000000"/>
+<status status="PASS" start="2026-07-01T11:18:32.030998" elapsed="0.000000"/>
 </kw>
 <kw name="Catenate" owner="BuiltIn">
-<msg time="2026-06-30T16:59:48.811918" level="INFO">${email} = SEPARATOR r4q0wiye @gmail.com</msg>
+<msg time="2026-07-01T11:18:32.032095" level="INFO">${email} = wwvucer3@gmail.com</msg>
 <var>${email}</var>
-<arg>SEPARATOR</arg>
+<arg>SEPARATOR=</arg>
 <arg>${rand_str}</arg>
 <arg>@gmail.com</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2026-06-30T16:59:48.810461" elapsed="0.001457"/>
+<status status="PASS" start="2026-07-01T11:18:32.032095" elapsed="0.000000"/>
 </kw>
 <kw name="Generate Random String" owner="String">
-<msg time="2026-06-30T16:59:48.820196" level="INFO">${password} = LouNEmG0</msg>
+<msg time="2026-07-01T11:18:32.033099" level="INFO">${password} = N3G9xR8R</msg>
 <var>${password}</var>
 <arg>8</arg>
 <arg>[LETTERS][NUMBERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2026-06-30T16:59:48.820196" elapsed="0.000000"/>
+<status status="PASS" start="2026-07-01T11:18:32.033099" elapsed="0.000000"/>
 </kw>
 <kw name="First Name" owner="FakerLibrary">
-<msg time="2026-06-30T16:59:48.825524" level="INFO">${name} = William</msg>
+<msg time="2026-07-01T11:18:32.034425" level="INFO">${name} = Rebecca</msg>
 <var>${name}</var>
-<status status="PASS" start="2026-06-30T16:59:48.823770" elapsed="0.001754"/>
+<status status="PASS" start="2026-07-01T11:18:32.034425" elapsed="0.000000"/>
 </kw>
 <kw name="Last Name" owner="FakerLibrary">
-<msg time="2026-06-30T16:59:48.828856" level="INFO">${prenom} = Thompson</msg>
+<msg time="2026-07-01T11:18:32.036318" level="INFO">${prenom} = Weeks</msg>
 <var>${prenom}</var>
-<status status="PASS" start="2026-06-30T16:59:48.827855" elapsed="0.001001"/>
+<status status="PASS" start="2026-07-01T11:18:32.036318" elapsed="0.001019"/>
 </kw>
 <kw name="Click Inscription" owner="main_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:48.833683" level="INFO">Clicking element 'css=.top-bar-btn'.</msg>
+<msg time="2026-07-01T11:18:32.040333" level="INFO">Clicking element 'css=.top-bar-btn'.</msg>
 <arg>${inscription}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:48.830156" elapsed="1.810965"/>
+<status status="PASS" start="2026-07-01T11:18:32.038331" elapsed="0.216128"/>
 </kw>
-<status status="PASS" start="2026-06-30T16:59:48.830156" elapsed="1.812320"/>
+<status status="PASS" start="2026-07-01T11:18:32.037337" elapsed="0.217122"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:50.663778" level="INFO">Current page contains text 'Créer un compte'.</msg>
+<msg time="2026-07-01T11:18:32.270593" level="INFO">Current page contains text 'Créer un compte'.</msg>
 <arg>Créer un compte</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-06-30T16:59:50.642476" elapsed="0.021815"/>
+<status status="PASS" start="2026-07-01T11:18:32.254459" elapsed="0.017133"/>
 </kw>
 <kw name="remplire_formulaire" owner="inscription_page">
 <kw name="Saisir name" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:50.666314" level="INFO">Typing text 'William' into text field 'id:nom'.</msg>
+<msg time="2026-07-01T11:18:32.273864" level="INFO">Typing text 'Rebecca' into text field 'id:nom'.</msg>
 <arg>${name}</arg>
 <arg>${n}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:50.666314" elapsed="0.160888"/>
+<status status="PASS" start="2026-07-01T11:18:32.272593" elapsed="0.142249"/>
 </kw>
 <arg>${n}</arg>
-<status status="PASS" start="2026-06-30T16:59:50.665301" elapsed="0.161901"/>
+<status status="PASS" start="2026-07-01T11:18:32.272593" elapsed="0.143265"/>
 </kw>
 <kw name="Saisir prenom" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:50.828599" level="INFO">Typing text 'Thompson' into text field 'id:prenom'.</msg>
+<msg time="2026-07-01T11:18:32.415858" level="INFO">Typing text 'Weeks' into text field 'id:prenom'.</msg>
 <arg>${prenom}</arg>
 <arg>${p}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:50.828599" elapsed="0.164174"/>
+<status status="PASS" start="2026-07-01T11:18:32.415858" elapsed="0.085482"/>
 </kw>
 <arg>${p}</arg>
-<status status="PASS" start="2026-06-30T16:59:50.827202" elapsed="0.165571"/>
+<status status="PASS" start="2026-07-01T11:18:32.415858" elapsed="0.086480"/>
 </kw>
 <kw name="Saisir email" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:50.994285" level="INFO">Typing text 'SEPARATOR r4q0wiye @gmail.com' into text field 'id:email'.</msg>
+<msg time="2026-07-01T11:18:32.503337" level="INFO">Typing text 'wwvucer3@gmail.com' into text field 'id:email'.</msg>
 <arg>${email}</arg>
 <arg>${e}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:50.993776" elapsed="0.175304"/>
+<status status="PASS" start="2026-07-01T11:18:32.502338" elapsed="0.100834"/>
 </kw>
 <arg>${e}</arg>
-<status status="PASS" start="2026-06-30T16:59:50.992773" elapsed="0.176307"/>
+<status status="PASS" start="2026-07-01T11:18:32.502338" elapsed="0.100834"/>
 </kw>
 <kw name="Saisir telephone" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.170091" level="INFO">Typing text '0785859674' into text field 'id=telephone'.</msg>
+<msg time="2026-07-01T11:18:32.604450" level="INFO">Typing text '0785859674' into text field 'id=telephone'.</msg>
 <arg>${tel}</arg>
 <arg>${t}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.169080" elapsed="0.112422"/>
+<status status="PASS" start="2026-07-01T11:18:32.603172" elapsed="0.082812"/>
 </kw>
 <arg>${t}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.169080" elapsed="0.112422"/>
+<status status="PASS" start="2026-07-01T11:18:32.603172" elapsed="0.082812"/>
 </kw>
 <kw name="Saisir adresse" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.283397" level="INFO">Typing text 'tiziouzou' into text field 'id=adresse'.</msg>
+<msg time="2026-07-01T11:18:32.687512" level="INFO">Typing text 'tiziouzou' into text field 'id=adresse'.</msg>
 <arg>${adresse}</arg>
 <arg>${a}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.282886" elapsed="0.143288"/>
+<status status="PASS" start="2026-07-01T11:18:32.685984" elapsed="0.079973"/>
 </kw>
 <arg>${a}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.281502" elapsed="0.146010"/>
+<status status="PASS" start="2026-07-01T11:18:32.685984" elapsed="0.079973"/>
 </kw>
 <kw name="Saisir ville" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.428511" level="INFO">Typing text 'paris' into text field 'id=ville'.</msg>
+<msg time="2026-07-01T11:18:32.767490" level="INFO">Typing text 'paris' into text field 'id=ville'.</msg>
 <arg>${ville}</arg>
 <arg>${v}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.428511" elapsed="0.153006"/>
+<status status="PASS" start="2026-07-01T11:18:32.765957" elapsed="0.084088"/>
 </kw>
 <arg>${v}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.427512" elapsed="0.154005"/>
+<status status="PASS" start="2026-07-01T11:18:32.765957" elapsed="0.084088"/>
 </kw>
 <kw name="Saisir code_postale" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.583538" level="INFO">Typing text '94200' into text field 'id=code_postal'.</msg>
+<msg time="2026-07-01T11:18:32.851376" level="INFO">Typing text '94200' into text field 'id=code_postal'.</msg>
 <arg>${c_postal}</arg>
 <arg>${cp}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.583538" elapsed="0.123979"/>
+<status status="PASS" start="2026-07-01T11:18:32.851376" elapsed="0.083405"/>
 </kw>
 <arg>${cp}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.583016" elapsed="0.124501"/>
+<status status="PASS" start="2026-07-01T11:18:32.850045" elapsed="0.084736"/>
 </kw>
 <kw name="Saisir pays" owner="inscription_page">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.710078" level="INFO">Selecting options from selection list 'id=pays' by value France.</msg>
+<msg time="2026-07-01T11:18:32.936289" level="INFO">Selecting options from selection list 'id=pays' by value France.</msg>
 <arg>${pays}</arg>
 <arg>${py}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.709034" elapsed="0.105400"/>
+<status status="PASS" start="2026-07-01T11:18:32.934781" elapsed="0.079538"/>
 </kw>
 <arg>${py}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.707517" elapsed="0.106917"/>
+<status status="PASS" start="2026-07-01T11:18:32.934781" elapsed="0.079538"/>
 </kw>
 <kw name="Saisir password" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.817470" level="INFO">Typing text 'LouNEmG0' into text field 'id=mot_de_passe'.</msg>
+<msg time="2026-07-01T11:18:33.015831" level="INFO">Typing text 'N3G9xR8R' into text field 'id=mot_de_passe'.</msg>
 <arg>${mdp}</arg>
 <arg>${pwd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.816454" elapsed="0.114967"/>
+<status status="PASS" start="2026-07-01T11:18:33.015831" elapsed="0.096085"/>
 </kw>
 <arg>${pwd}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.815443" elapsed="0.115978"/>
+<status status="PASS" start="2026-07-01T11:18:33.014319" elapsed="0.098596"/>
 </kw>
 <kw name="Saisir Confirmed_password" owner="inscription_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:51.932436" level="INFO">Typing text 'LouNEmG0' into text field 'id=confirmer_mot_de_passe'.</msg>
+<msg time="2026-07-01T11:18:33.114032" level="INFO">Typing text 'N3G9xR8R' into text field 'id=confirmer_mot_de_passe'.</msg>
 <arg>${c_mdp}</arg>
 <arg>${cpwd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:51.932436" elapsed="0.112899"/>
+<status status="PASS" start="2026-07-01T11:18:33.112915" elapsed="0.087457"/>
 </kw>
 <arg>${cpwd}</arg>
-<status status="PASS" start="2026-06-30T16:59:51.931421" elapsed="0.113914"/>
+<status status="PASS" start="2026-07-01T11:18:33.112915" elapsed="0.087457"/>
 </kw>
 <kw name="Click inscription" owner="inscription_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${btn_inscrire}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-06-30T16:59:52.045335" elapsed="0.032705"/>
+<status status="PASS" start="2026-07-01T11:18:33.200372" elapsed="0.021426"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${btn_inscrire}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2026-06-30T16:59:52.078040" elapsed="0.296410"/>
+<status status="PASS" start="2026-07-01T11:18:33.221798" elapsed="0.278034"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-06-30T16:59:52.374450" level="INFO">Clicking button 'css=.btn.btn-fuchsia'.</msg>
+<msg time="2026-07-01T11:18:33.502672" level="INFO">Clicking button 'css=.btn.btn-fuchsia'.</msg>
 <arg>${btn_inscrire}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-30T16:59:52.374450" elapsed="0.086953"/>
+<status status="PASS" start="2026-07-01T11:18:33.501353" elapsed="6.462801"/>
 </kw>
-<status status="PASS" start="2026-06-30T16:59:52.045335" elapsed="0.416068"/>
+<status status="PASS" start="2026-07-01T11:18:33.200372" elapsed="6.763782"/>
 </kw>
 <arg>${name}</arg>
 <arg>${prenom}</arg>
@@ -204,20 +203,28 @@
 <arg>France</arg>
 <arg>${password}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-06-30T16:59:50.664291" elapsed="1.797112"/>
+<status status="PASS" start="2026-07-01T11:18:32.271592" elapsed="7.692562"/>
+</kw>
+<kw name="CheckMsg" owner="inscription_page">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-01T11:18:40.035877" level="INFO">Element 'xpath=//div[contains(@class,'alert-success')]' contains text 'Inscription réussie'.</msg>
+<arg>${successMsg}</arg>
+<arg>Inscription réussie</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-07-01T11:18:39.965894" elapsed="0.069983"/>
+</kw>
+<status status="PASS" start="2026-07-01T11:18:39.965894" elapsed="0.070489"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-30T16:59:52.461403" elapsed="2.302436"/>
+<status status="PASS" start="2026-07-01T11:18:40.036383" elapsed="2.450268"/>
 </kw>
 <tag>e2e</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2026-06-30T16:59:47.910187" elapsed="6.853652"/>
+<status status="PASS" start="2026-07-01T11:18:12.199303" elapsed="30.287348"/>
 </test>
 <doc>parcour inscription</doc>
-<status status="PASS" start="2026-06-30T16:59:47.109847" elapsed="7.655089"/>
-</suite>
-<status status="PASS" start="2026-06-30T16:59:47.058800" elapsed="7.708244"/>
+<status status="PASS" start="2026-07-01T11:18:11.350380" elapsed="31.138672"/>
 </suite>
 <statistics>
 <total>
@@ -228,8 +235,7 @@
 <stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="Inscription" id="s1-s1" pass="1" fail="0" skip="0">Tests.Inscription</stat>
+<stat name="Inscription" id="s1" pass="1" fail="0" skip="0">Inscription</stat>
 </suite>
 </statistics>
 <errors>
